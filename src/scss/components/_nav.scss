@@ -1,0 +1,98 @@
+.nav {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: $contentPadding;
+  }
+  &__brand {
+    display: flex;
+    color: white;
+  }
+  &__brand-text {
+    margin-left: 10px;
+  }
+  &__brand-name {
+    font-size: 1.1em;
+    font-family: $headline;
+  }
+  &__brand-subtext {
+    font-size: 0.8em;
+    font-family: $subheadline;
+  }
+  &__burger-inner {
+    padding: 0px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+  }
+  &__burger-inner:focus-visible .fa-bars {
+    color: $secondary;
+  }
+  &__burger-icon {
+    font-size: 1.8em;
+    color: white;
+  }
+
+  &__list {
+    list-style: none;
+    background-color: $primary;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    padding: $contentPadding;
+    display: none;
+  }
+  &__item {
+    padding: $contentPadding;
+  }
+  &__link {
+    font-size: 0.9em;
+    font-family: $headline;
+    border: 1px solid transparent;
+    padding: 0px;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+  }
+  &__link:hover {
+    border-bottom: 1px solid $secondary;
+  }
+  &__link:focus {
+    border-bottom: 1px solid $secondary;
+    outline: none;
+  }
+  &__list-open {
+    display: block;
+  }
+}
+
+.fa-times {
+  padding-right: 2px;
+}
+
+@media screen and (min-width: 700px) {
+  .nav {
+    justify-content: space-between;
+    display: flex;
+    &__burger {
+      display: none;
+    }
+    &__list {
+      display: flex;
+      background-color: transparent;
+      width: auto;
+      align-items: center;
+    }
+    &__item {
+      padding-top: 0px;
+      padding-bottom: 0px;
+    }
+  }
+}

@@ -1,0 +1,61 @@
+.contact {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  min-height: 100vh;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  &__wrapper {
+    padding: $contentPadding/2;
+    width: 100%;
+  }
+  &__heading {
+    font-size: 2em;
+    font-family: $headline;
+    padding-bottom: 100px;
+    text-align: center;
+  }
+  &__heading--color {
+    color: $secondary;
+  }
+
+  &__info {
+    color: white;
+    font-family: $headline;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  &__phone {
+    background-color: $secondary;
+    border-radius: 5px;
+    width: 100%;
+    margin: $contentPadding/2;
+  }
+
+  &__email {
+    background-color: $primary;
+    border-radius: 5px;
+    width: 100%;
+    margin: $contentPadding/2;
+  }
+  &__nr {
+    margin: 0px;
+    padding: $contentPadding;
+  }
+  &__adress {
+    margin: 0px;
+    padding: $contentPadding;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .contact {
+    &__info {
+      flex-wrap: nowrap;
+    }
+  }
+}

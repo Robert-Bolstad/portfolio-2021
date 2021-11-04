@@ -1,0 +1,16 @@
+//Setup
+@import "base";
+@import "variables";
+
+//Components
+@import "components/nav";
+@import "components/intro";
+@import "components/card";
+@import "components/form";
+@import "components/footer";
+
+//Page sections
+@import "pageSections/home";
+@import "pageSections/portfolio";
+@import "pageSections/about";
+@import "pageSections/contact";
